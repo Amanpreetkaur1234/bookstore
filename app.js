@@ -6,7 +6,7 @@ dotenv.config();
 const bookroute=require("./routes/bookroute");
 
 mongoose.connect(process.env.MONGO_URL,{
- useNewUrlParse:true,
+ useNewUrlParser:true,
  useUnifiedTopology:true,
 }).then(()=>console.log("connected to mongodbb")
 .catch(err=>console.log(err)));

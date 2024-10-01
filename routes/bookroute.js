@@ -1,7 +1,7 @@
 const express=require("express");
 const router=express.Router();
 
-const{createbook,getbook,updatebook,deletebook}=require("../controllersbookController");
+const{createbook,getbook,updatebook,deletebook}=require("../controllers/bookcontroller");
 
 router.post("/",createbook);
 router.get("/:id",getbook);
